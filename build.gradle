@@ -25,6 +25,8 @@ import org.asciidoctor.gradle.AsciidoctorTask
  * ======================================================== */
 buildscript {
     repositories {
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
         jcenter()
     }
     dependencies {
@@ -78,6 +80,8 @@ defaultTasks 'build'
 
 allprojects {
     repositories{
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
         jcenter()
         mavenLocal()
     }
